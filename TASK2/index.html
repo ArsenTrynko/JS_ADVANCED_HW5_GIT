@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="main_block">
+            <div class='label'>Баланс</div>
+            <input type="text" class='info_input' value="1000 грн" id="bank_input" disabled>
+            <div class='label'>Пиво</div>
+            <input type="text" class='info_input' value="100 шт." id="beer_input" disabled>
+            <div class='label'>Вино</div>
+            <input type="text" class='info_input' value="50 шт." id="vine_input" disabled>
+            <div class='label'>Пепсі</div>
+            <input type="text" class='info_input' value="80 шт." id="pepsi_input" disabled>
+        </div>
+        <div class="main_block">
+            <div class='label'>Кількість</div>
+            <input type="number" class='info_input' value="" id="count_input">
+            <input type="radio" class="radio1" value="beer" name="1">Пиво
+            <input type="radio" class="radio1" value="vine" name="1">Вино
+            <input type="radio" class="radio1" value="pepsi" name="1">Пепсі
+            <button type="button" id='add'>Додати</button>
+            <textarea id='cart_input'></textarea>
+            <button type="button" id='buy'>Купити</button>
+        </div>
+        <div class="main_block">
+            <div class="reciept"></div>
+        </div>
+    </div>
+
+    <script src="shop.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
